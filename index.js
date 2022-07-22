@@ -1,7 +1,10 @@
-//document.getElementById("count-el").innerText = 5
-// let firstBatch = 5
-// let count = firstBatch
-// console.log(count)
-let count = 10
+let count = 0
+function increment(){
 count += 1
 document.getElementById("count-el").innerText = count
+}
+
+function decrement(){
+    count -= 1
+    document.getElementById("count-el").innerText = count
+}
