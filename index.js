@@ -14,5 +14,6 @@ function decrement(){
 function save(){
     let countStr = count + " - "
         saveEl.textContent += countStr
-    console.log(count)
+        count = 0
+        countEl.textContent = 0
 }
