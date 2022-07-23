@@ -1,10 +1,6 @@
-if (typeof window !== "undefined"){
-    console.log("in window")
-}else{
-    console.log("not in window")
-}
 var count = 0
 let countEl = document.getElementById("count-el")
+let saveEl = document.getElementById("save-el")
 
 function increment(){
 count += 1
@@ -14,9 +10,9 @@ countEl.innerText = count
 function decrement(){
     count -= 1
     countEl.innerText = count
-    console.log(count)
 }
 function save(){
+    let countStr = count + " - "
+        saveEl.textContent += countStr
     console.log(count)
 }
-console.log(count)
